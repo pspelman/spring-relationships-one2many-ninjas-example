@@ -44,11 +44,11 @@ CREATE TABLE IF NOT EXISTS `relationships-o2m`.`ninjas` (
   `age` INT NULL,
   `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
-  `dojos_id` INT NOT NULL,
+  `dojo_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_ninjas_dojos_idx` (`dojos_id` ASC),
+  INDEX `fk_ninjas_dojo_idx` (`dojo_id` ASC),
   CONSTRAINT `fk_ninjas_dojos`
-    FOREIGN KEY (`dojos_id`)
+    FOREIGN KEY (`dojo_id`)
     REFERENCES `relationships-o2m`.`dojos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
