@@ -7,9 +7,10 @@
 <body>
 <div class="top_nav">
     <jsp:invoke fragment="top_nav" />
-    <button name="all_persons" class="btn-inverse" value="All Persons" onclick="location.href='/persons/all';">All Persons</button>
-    <button name="new" class="btn-inverse" value="Add New" onclick="location.href='/licenses/new';">Add License</button>
-    <button name="new_person" class="btn-inverse" value="New Person" onclick="location.href='/persons/new';">New Person</button>
+    <button name="dojo_list" class="btn-inverse" value="Dojo List" onclick="location.href='/dojos/all';">All Dojos</button>
+    <%--<button name="ninja_list" class="btn-inverse" value="All Ninjas" onclick="location.href='/ninjas/all';">All Ninjas</button>--%>
+    <button name="new_person" class="btn-inverse" value="New Dojo" onclick="location.href='/dojos/new';">New Dojo</button>
+    <button name="new_person" class="btn-inverse" value="New Ninja" onclick="location.href='/ninjas/new';">New Ninja</button>
 </div>
 </body>
 </HTML>
